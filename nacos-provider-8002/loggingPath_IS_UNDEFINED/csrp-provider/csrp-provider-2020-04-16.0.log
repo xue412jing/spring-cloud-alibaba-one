@@ -1,0 +1,105 @@
+2020-04-16 17:28:43.337 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization - 330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cc7a3bee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 17:28:45.227 logback [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - initialize - 101 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='csrp-provider.properties'}]}
+2020-04-16 17:28:45.234 logback [main] INFO  com.york.nacos.NacosProvider - logStartupProfileInfo - 651 - No active profile set, falling back to default profiles: default
+2020-04-16 17:28:46.008 logback [main] WARN  o.s.boot.actuate.endpoint.EndpointId - logWarning - 155 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-04-16 17:28:46.017 logback [main] WARN  o.s.boot.actuate.endpoint.EndpointId - logWarning - 155 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-04-16 17:28:46.066 logback [main] WARN  o.m.s.mapper.ClassPathMapperScanner - doScan - 166 - No MyBatis mapper was found in '[com.york.nacos]' package. Please check your configuration.
+2020-04-16 17:28:46.387 logback [main] WARN  o.s.boot.actuate.endpoint.EndpointId - logWarning - 155 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-16 17:28:46.549 logback [main] INFO  o.s.cloud.context.scope.GenericScope - setSerializationId - 295 - BeanFactory id=0225e6e9-3ad2-367a-a5c1-0aed57f13665
+2020-04-16 17:28:46.955 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization - 330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 17:28:47.368 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization - 330 - Bean 'spring.cloud.sentinel-org.springframework.cloud.alibaba.sentinel.SentinelProperties' of type [org.springframework.cloud.alibaba.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 17:28:47.377 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization - 330 - Bean 'org.springframework.cloud.alibaba.sentinel.custom.SentinelAutoConfiguration' of type [org.springframework.cloud.alibaba.sentinel.custom.SentinelAutoConfiguration$$EnhancerBySpringCGLIB$$6dcb0514] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 17:28:47.390 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization - 330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cc7a3bee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 17:28:47.868 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize - 92 - Tomcat initialized with port(s): 8002 (http)
+2020-04-16 17:28:47.888 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - log - 173 - Initializing ProtocolHandler ["http-nio-8002"]
+2020-04-16 17:28:47.889 logback [main] INFO  o.a.catalina.core.StandardService - log - 173 - Starting service [Tomcat]
+2020-04-16 17:28:47.890 logback [main] INFO  o.a.catalina.core.StandardEngine - log - 173 - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-04-16 17:28:48.089 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log - 173 - Initializing Spring embedded WebApplicationContext
+2020-04-16 17:28:48.090 logback [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext - 284 - Root WebApplicationContext: initialization completed in 2834 ms
+2020-04-16 17:28:48.284 logback [main] INFO  o.s.c.a.s.SentinelWebAutoConfiguration - servletRequestListener - 73 - [Sentinel Starter] register Sentinel with urlPatterns: [/*].
+2020-04-16 17:28:49.385 logback [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - dataSource - 56 - Init DruidDataSource
+2020-04-16 17:28:49.523 logback [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - onStartup - 61 - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthContributorRegistry' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-04-16 17:28:49.563 logback [main] INFO  o.a.catalina.core.StandardService - log - 173 - Stopping service [Tomcat]
+2020-04-16 17:28:49.635 logback [main] WARN  o.a.c.loader.WebappClassLoaderBase - log - 173 - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:748)
+2020-04-16 17:28:49.638 logback [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - refresh - 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-04-16 17:28:49.665 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - logMessage - 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-16 17:28:49.671 logback [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - report - 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-04-16 17:31:17.491 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization - 330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e695084f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 17:31:19.390 logback [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - initialize - 101 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='csrp-provider.properties'}]}
+2020-04-16 17:31:19.398 logback [main] INFO  com.york.nacos.NacosProvider - logStartupProfileInfo - 651 - No active profile set, falling back to default profiles: default
+2020-04-16 17:31:20.137 logback [main] WARN  o.s.boot.actuate.endpoint.EndpointId - logWarning - 155 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-04-16 17:31:20.142 logback [main] WARN  o.s.boot.actuate.endpoint.EndpointId - logWarning - 155 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-04-16 17:31:20.192 logback [main] WARN  o.m.s.mapper.ClassPathMapperScanner - doScan - 166 - No MyBatis mapper was found in '[com.york.nacos]' package. Please check your configuration.
+2020-04-16 17:31:20.501 logback [main] WARN  o.s.boot.actuate.endpoint.EndpointId - logWarning - 155 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-16 17:31:20.656 logback [main] INFO  o.s.cloud.context.scope.GenericScope - setSerializationId - 295 - BeanFactory id=08a3ba2a-f5ca-37ab-a517-7d804d298931
+2020-04-16 17:31:20.903 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization - 330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 17:31:20.930 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - postProcessAfterInitialization - 330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e695084f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-16 17:31:21.458 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - initialize - 92 - Tomcat initialized with port(s): 8002 (http)
+2020-04-16 17:31:21.476 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - log - 173 - Initializing ProtocolHandler ["http-nio-8002"]
+2020-04-16 17:31:21.477 logback [main] INFO  o.a.catalina.core.StandardService - log - 173 - Starting service [Tomcat]
+2020-04-16 17:31:21.478 logback [main] INFO  o.a.catalina.core.StandardEngine - log - 173 - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-04-16 17:31:21.653 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - log - 173 - Initializing Spring embedded WebApplicationContext
+2020-04-16 17:31:21.654 logback [main] INFO  o.s.web.context.ContextLoader - prepareWebApplicationContext - 284 - Root WebApplicationContext: initialization completed in 2232 ms
+2020-04-16 17:31:22.874 logback [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - dataSource - 56 - Init DruidDataSource
+2020-04-16 17:31:22.994 logback [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - onStartup - 61 - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthContributorRegistry' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-04-16 17:31:23.038 logback [main] INFO  o.a.catalina.core.StandardService - log - 173 - Stopping service [Tomcat]
+2020-04-16 17:31:23.113 logback [main] WARN  o.a.c.loader.WebappClassLoaderBase - log - 173 - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:748)
+2020-04-16 17:31:23.116 logback [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - refresh - 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-04-16 17:31:23.137 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - logMessage - 136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-16 17:31:23.142 logback [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - report - 40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+

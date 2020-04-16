@@ -1,0 +1,17 @@
+
+spring:
+  application:
+    name: nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.22.2.57:8848
+      config:
+        server-addr: 10.22.2.57:8848
+        file-extension: yaml
+    sentinel:
+      transport:
+        port: 9000
+        dashboard: 127.0.0.1:8080
+server:
+  port: 9000
